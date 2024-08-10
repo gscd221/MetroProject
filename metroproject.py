@@ -1,5 +1,6 @@
 from tkinter import *
 from tkinter import ttk
+import metroprojecttab3map 
 win=Tk()
 total=[]
 places = ["수도권","부산","대구","대전","광주"]
@@ -254,6 +255,9 @@ def search(self):
     else:
         print(val)
 
+def map():
+    print(metroprojecttab3map.sel1stn)
+map()
 b1.bind("<ButtonRelease-1>",search)
 e1.bind("<Return>",search)
 
